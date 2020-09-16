@@ -1,8 +1,6 @@
 === Queer ===
 Contributors: imoptimal
-Requires at least: 5.0
-Tested up to: 5.2
-Requires PHP: 7.0
+Tested up to: 5.5.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -31,6 +29,9 @@ Resolved issues reported by the theme reviewer.
 
 = 1.0.6 =
 Revamped the header section (modernized the search appearance) - as seen in the new theme's screenshot.
+
+= 1.0.7 =
+Highlighted the current category/tag on the archive page. Added the admin notice on the main dashboard page.
 
 == Copyright ==
 Queer Theme, Copyright 2020 Ivan Maljukanovic

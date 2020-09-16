@@ -16,7 +16,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"X-Generator: Poedit 2.4\n"
+"X-Generator: Poedit 2.4.1\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -211,40 +211,48 @@ msgstr ""
 msgid "Categorized as: "
 msgstr ""
 
-#: functions.php:230
+#: functions.php:235
 msgid "Uncategorized"
 msgstr ""
 
-#: functions.php:237
+#: functions.php:241
 msgid "Tags: "
 msgstr ""
 
-#: functions.php:240
+#: functions.php:249
 msgid "Untagged"
 msgstr ""
 
-#: functions.php:246
+#: functions.php:255
 msgid "Pages:"
 msgstr ""
 
-#: functions.php:252
+#: functions.php:261
 msgid "Next page"
 msgstr ""
 
-#: functions.php:253
+#: functions.php:262
 msgid "Previous page"
 msgstr ""
 
-#: functions.php:272
+#: functions.php:281
 msgid "Built with"
 msgstr ""
 
-#: functions.php:274
+#: functions.php:283
 msgid "by"
 msgstr ""
 
-#: functions.php:276
+#: functions.php:285
 msgid "Imoptimal"
+msgstr ""
+
+#: functions.php:307
+msgid "If you wish to customize the Queer Theme even further - check out this complementaty plugin from wordpress.org repository (made by the same author): "
+msgstr ""
+
+#: functions.php:309
+msgid "Queerify"
 msgstr ""
 
 #: header.php:20

@@ -25,3 +25,6 @@ Resolved issues reported by the theme reviewer.
 
 = 1.0.6 =
 Revamped the header section (modernized the search appearance) - as seen in the new theme's screenshot.
+
+= 1.0.7 =
+Highlighted the current category/tag on the archive page. Added the admin notice on the main dashboard page.

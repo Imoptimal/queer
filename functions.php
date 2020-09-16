@@ -225,17 +225,26 @@ if(!function_exists('queerthm_theme_functions')) {
         function queerthm_separate_categories() {
             if(has_category()) {
                 esc_html_e('Categorized as: ', 'queer');
-                the_category( ' / ' );
+                //the_category( ' ' );
+                $terms = get_the_category();
+                foreach ($terms as $term) {
+                    $class = (is_category($term->name)) ? 'current' : '';
+                    echo '<a href="' . get_term_link($term) . '" class="' . $class . '">' . $term->name . '</a> ';
+                }
             } else {
                 esc_html_e('Uncategorized', 'queer'); 
             }
         }
-
         //Display tags with separator
         function queerthm_separate_tags() {
             if(has_tag()) {
                 esc_html_e('Tags: ', 'queer');
-                the_tags('', ' / ' );
+                //the_tags('', ' ' );
+                $terms = get_the_tags();
+                foreach ($terms as $term) {
+                    $class = (is_tag($term->name)) ? 'current' : '';
+                    echo '<a href="' . get_term_link($term) . '" class="' . $class . '">' . $term->name . '</a> ';
+                }
             } else {
                 esc_html_e('Untagged', 'queer');
             }
@@ -288,6 +297,22 @@ if(!function_exists('queerthm_theme_functions')) {
                 $uri = esc_url(get_template_directory_uri() . '/img/'. sanitize_file_name($gender .'.png')); 
                 echo "<img src='{$uri}'/>";
         }
+
+        // Admin notices
+        function queerthm_admin_notice($hook) {
+            $hook = get_current_screen();
+            if ($hook->id != "dashboard") { // if not the main dashboard page
+                return;
+            }
+            $message = esc_html__('If you wish to customize the Queer Theme even further - check out this complementaty plugin from wordpress.org repository (made by the same author): ', 'queer');
+            $link = 'https://wordpress.org/plugins/queerify/';
+            $plugin_name = esc_html__('Queerify', 'queer');
+            echo "<div class='notice notice-info is-dismissible'>
+                <p>{$message} <a target='_blank' href='{$link}'>{$plugin_name}</a></p>
+            </div>";
+        }
+        add_action('admin_notices', 'queerthm_admin_notice');
+
     }
     queerthm_theme_functions();
 }
