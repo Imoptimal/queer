@@ -28,3 +28,6 @@ Revamped the header section (modernized the search appearance) - as seen in the 
 
 = 1.0.7 =
 Highlighted the current category/tag on the archive page. Added the admin notice on the main dashboard page.
+
+= 1.0.8 =
+Fixed the menu selection check mark in case of the menu item that has sub-items (it no longer check marks all of its children).

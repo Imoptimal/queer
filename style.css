@@ -4,7 +4,7 @@ Theme URI: https://imoptimal.com/portfolio/queer-wordpress-theme/
 Author: Ivan Maljukanović @imoptimal
 Author URI: imoptimal.com
 Description: Theme that celebrates gender diversity by providing the user to choose an option inside of the theme customizer that represents their non-heterosexual gender identity. That choice enables a different website background image - flag symbol of the choosen gender community inside of the broad LGBTIQ+ spectrum. Theme is ideal for building online communities - forums or more advanced social networks (commpatible with BuddyPress and bbPress plugins).
-Version: 1.0.7
+Version: 1.0.8
 Requires at least: 4.9.8
 Requires PHP: 5.6
 Tested up to: 5.5.1
@@ -217,7 +217,7 @@ ul {
     color: #ff8c00;
 }
 
-.queerthm-container .site-header li.current-menu-item a::before {
+.queerthm-container .site-header li.current-menu-item > a::before {
     content: '✔';
     color: #ff8c00;
 }
